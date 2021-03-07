@@ -4,7 +4,7 @@ A simple injector simulator to run on Arduino, and output to an RGB LED grid.
 
 Intended for testing automotive ECU outputs for fuel injectors, primarily for DIY ECU projects such as RusEFI and Speeduino, but should work with any automotive ECU low-side outputs.
 
-![video of the system running with RusEFI at 100RPM](https://user-images.githubusercontent.com/649131/110259234-7934dd00-7f9e-11eb-8454-795fd59b3849.mp4)
+![](https://user-images.githubusercontent.com/649131/110259391-5b1bac80-7f9f-11eb-822f-5a86ea515201.gif)
 
 Each column of LEDs corresponds to a cylinder of the engine.  The first LED of the column will flash white while the injector is commanded to open, and then change colour depending on firing order.  If this was the correct cylinder in the firing order, it turns green, otherwise it turns red, and highlights the correct cylinder (that should have fired) in yellow.  The rest of the LEDs in the column provide a timeline, scrolling one step along for each new pulse that's received.
 
